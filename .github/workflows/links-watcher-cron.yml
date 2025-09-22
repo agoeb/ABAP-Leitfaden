@@ -23,6 +23,7 @@ jobs:
           output: ./lychee/out.md
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        continue-on-error: true
       - name: Find existing issue
         id: find_issue
         uses: micalevisk/last-issue-action@v2
